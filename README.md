@@ -123,16 +123,6 @@ See [`DECISIONS.md`](./DECISIONS.md) for full architectural reasoning. Summary:
 
 ---
 
-## 🛣️ What's Next
-
-This is **Project 1 of 3** in my Generative AI Engineering portfolio:
-
-- ✅ **Project 1** — LLM Evaluator Suite *(this repo)*
-- 🔄 **Project 2** — Structured Data Extractor *(in progress)*
-- ⏳ **Project 3** — Multi-Stage Content Pipeline
-
----
-
 ## 🧑‍💻 Author
 
 **Ankur**
