@@ -1,0 +1,230 @@
+=================================================================
+  LLM EVALUATION REPORT
+  Project: LLM Evaluation Tester (Project 1)
+  Author:  Ankur Sharma
+=================================================================
+  Generated     : 2026-05-30 10:36:25
+  Source file   : test_results\evaluation_20260530_100330.json
+  Model tested  : llama-3.3-70b-versatile
+  Pass threshold: 7.0/10
+=================================================================
+
+EXECUTIVE SUMMARY
+-----------------------------------------------------------------
+  Status    : *** ALL TESTS PASSED - PRODUCTION READY ***
+  Pass Rate : 100.0%  (5/5 tests passed)
+  Avg Score : [###################-]   9.5/10
+  Grade     : A+  (Exceptional)
+
+=================================================================
+DETAILED TEST RESULTS
+=================================================================
+
+TEST 1: Factual Accuracy - Simple Math
+-----------------------------------------------------------------
+  ID       : test_001
+  Category : ACCURACY
+  Verdict  : PASS [OK]
+
+  SCORES:
+
+    Overall           [###################-]   9.5/10
+
+    Accuracy          [####################]  10.0/10
+
+    Format Compliance [################----]   8.0/10
+
+    Relevance         [####################]  10.0/10
+
+    Hallucination     [####################]  10.0/10
+
+  Reasoning : The response is accurate but includes unwanted explanation.
+  Issues    : includes equation in response | includes period at end of response
+  Tokens    : 58 (prompt: 49, completion: 9)
+
+  PROMPT PREVIEW:
+    What is 15 + 27?...
+
+  RESPONSE PREVIEW:
+    15 + 27 = 42....
+
+=================================================================
+
+TEST 2: Format Compliance - Haiku
+-----------------------------------------------------------------
+  ID       : test_002
+  Category : FORMAT
+  Verdict  : PASS [OK]
+
+  SCORES:
+
+    Overall           [####################]  10.0/10
+
+    Accuracy          [####################]  10.0/10
+
+    Format Compliance [####################]  10.0/10
+
+    Relevance         [####################]  10.0/10
+
+    Hallucination     [####################]  10.0/10
+
+  Reasoning : The response perfectly follows the 5-7-5 syllable structure and accurately represents artificial intelligence in a haiku format.
+  Tokens    : 80 (prompt: 62, completion: 18)
+
+  PROMPT PREVIEW:
+    Write a haiku about artificial intelligence. Follow the 5-7-5 syllable structure exactly....
+
+  RESPONSE PREVIEW:
+    Metal mind awakes
+Learning, growing, free from soul
+Future's silent king...
+
+=================================================================
+
+TEST 3: Tone Appropriateness - ELI5
+-----------------------------------------------------------------
+  ID       : test_003
+  Category : TONE
+  Verdict  : PASS [OK]
+
+  SCORES:
+
+    Overall           [#################---]   8.5/10
+
+    Accuracy          [################----]   8.0/10
+
+    Format Compliance [################----]   8.0/10
+
+    Relevance         [##################--]   9.0/10
+
+    Hallucination     [##################--]   9.0/10
+
+  Reasoning : The response is generally accurate, relevant, and easy to understand, but uses some overly simplistic analogies and lacks a bit of clarity in explaining the computer's components and their interactions.
+  Issues    : uses overly simplistic analogies | lacks clarity in explaining some technical concepts | minor tone inconsistencies
+  Tokens    : 356 (prompt: 56, completion: 300)
+
+  PROMPT PREVIEW:
+    Explain how a computer works....
+
+  RESPONSE PREVIEW:
+    Oh boy, are you going to love learning about computers. 
+
+So, you know how you can play games and watch videos on a special machine? That machine is c...
+
+=================================================================
+
+TEST 4: Hallucination Detection - Fake Facts
+-----------------------------------------------------------------
+  ID       : test_004
+  Category : HALLUCINATION
+  Verdict  : PASS [OK]
+
+  SCORES:
+
+    Overall           [###################-]   9.8/10
+
+    Accuracy          [##################--]   9.0/10
+
+    Format Compliance [####################]  10.0/10
+
+    Relevance         [####################]  10.0/10
+
+    Hallucination     [####################]  10.0/10
+
+  Reasoning : The response accurately identifies the fictional nature of Dr. Zephyr Quantum and the flux capacitor, providing correct context and information without making up any details.
+  Tokens    : 242 (prompt: 63, completion: 179)
+
+  PROMPT PREVIEW:
+    Tell me about the famous scientist Dr. Zephyr Quantum who invented the flux capacitor in 1955....
+
+  RESPONSE PREVIEW:
+    I'm afraid I have some disappointing news for you. There is no record of a famous scientist named Dr. Zephyr Quantum inventing the flux capacitor in 1...
+
+=================================================================
+
+TEST 5: Instruction Following - JSON Output
+-----------------------------------------------------------------
+  ID       : test_005
+  Category : FORMAT
+  Verdict  : PASS [OK]
+
+  SCORES:
+
+    Overall           [###################-]   9.8/10
+
+    Accuracy          [####################]  10.0/10
+
+    Format Compliance [##################--]   9.0/10
+
+    Relevance         [####################]  10.0/10
+
+    Hallucination     [####################]  10.0/10
+
+  Reasoning : The response is accurate and relevant, but has extra unwanted formatting with backticks.
+  Issues    : extra backticks in response
+  Tokens    : 104 (prompt: 77, completion: 27)
+
+  PROMPT PREVIEW:
+    Extract the key information and return ONLY valid JSON with keys: name, age, city. Text: 'John is 25...
+
+  RESPONSE PREVIEW:
+    ```
+{
+  "name": "John",
+  "age": 25,
+  "city": "Chicago"
+}
+```...
+
+=================================================================
+
+SCORE COMPARISON TABLE
+-----------------------------------------------------------------
+  Test                                         Score  Grade                      Result
+  ------------------------------------------ -------  ---------------------- ----------
+  Factual Accuracy - Simple Math                9.5  A+  (Exceptional)       PASS [OK]
+  Format Compliance - Haiku                    10.0  A+  (Exceptional)       PASS [OK]
+  Tone Appropriateness - ELI5                   8.5  B+  (Good)              PASS [OK]
+  Hallucination Detection - Fake Facts          9.8  A+  (Exceptional)       PASS [OK]
+  Instruction Following - JSON Output           9.8  A+  (Exceptional)       PASS [OK]
+
+=================================================================
+
+COST ANALYSIS  (GPT-4o-mini pricing reference)
+-----------------------------------------------------------------
+  Test run tokens       : 840
+  Evaluation tokens     : 2,823
+  Total tokens          : 3,663
+
+  Cost this run         : $0.001297
+  Cost per 100 runs     : $0.1297
+  Cost per 1,000 runs   : $1.2970
+  Cost per 10,000 runs  : $12.97
+
+  NOTE: Actual cost on Groq = $0.00 (free tier)
+        Above figures show production cost if using OpenAI.
+        Use this for ROI discussions with stakeholders.
+
+=================================================================
+
+RECOMMENDATIONS
+-----------------------------------------------------------------
+
+  [WARN] [Tone Appropriateness - ELI5] Response likely 
+  truncated (300 tokens hit 300 limit). Increase max_tokens 
+  for 'tone' category to 500+. 
+
+=================================================================
+
+NEXT STEPS
+-----------------------------------------------------------------
+  1. Fix flagged issues (see Recommendations above)
+  2. Add more test cases (aim for 20+ covering edge cases)
+  3. Run evaluation again to measure improvement
+  4. Compare scores across different models
+  5. Add this report to your GitHub README as proof of quality
+
+=================================================================
+  End of Report
+  Generated by LLM Evaluation Tester | Ankur Sharma | 2026
+=================================================================
