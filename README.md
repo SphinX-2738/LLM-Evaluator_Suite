@@ -19,7 +19,7 @@ Given a set of test prompts, it:
 ## 📁 Project Structure
 
 ```
-llm-evaluator-suite/
+LLM-Evaluator_Suite/
 │
 ├── first_call.py           # Initial API connection test
 ├── temperature_test.py     # Experiments with temperature parameter
@@ -54,8 +54,8 @@ llm-evaluator-suite/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/SphinX-2738/llm-evaluator-suite.git
-cd llm-evaluator-suite
+git clone https://github.com/SphinX-2738/LLM-evaluator_suite.git
+cd LLM-Evaluator_suite
 ```
 
 ### 2. Create a virtual environment
@@ -128,5 +128,5 @@ See [`DECISIONS.md`](./DECISIONS.md) for full architectural reasoning. Summary:
 **Ankur**
 Building a portfolio in Generative AI Engineering — one project at a time.
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@SphinX-2738](https://github.com/SphinX-2738)
 - LinkedIn: [Ankur Sharma](https://www.linkedin.com/in/ankur-sharma-37a0a3276/)
