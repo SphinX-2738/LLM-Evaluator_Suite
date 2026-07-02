@@ -24,7 +24,7 @@ for i, sys_prompt in enumerate(system_prompts, 1):
     print('='*60)
     
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="qwen/qwen3.6-27b",
         messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": question}

@@ -31,7 +31,7 @@ load_dotenv()
 # ─────────────────────────────────────────────
 
 API_KEY        = os.getenv("GROQ_API_KEY")
-MODEL          = "llama-3.3-70b-versatile"
+MODEL          = "qwen/qwen3.6-27b"
 EVAL_TEMP      = 0                     # ALWAYS 0 for evaluators (deterministic scoring)
 EVAL_MAX_TOK   = 400
 PASS_THRESHOLD = 7.0                   # Score >= 7.0 out of 10 = PASS

@@ -18,7 +18,7 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY")) # Replace with your key
 
 # Configuration
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "qwen/qwen3.6-27b"
 TEMPERATURE = 0.7
 MAX_TOKENS = 300
 
